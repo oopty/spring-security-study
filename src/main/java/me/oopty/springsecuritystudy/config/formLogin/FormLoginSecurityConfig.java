@@ -19,6 +19,6 @@ public class FormLoginSecurityConfig extends WebSecurityConfigurerAdapter {
 //                .usernameParameter("username")
 //                .passwordParameter("password")
                 .defaultSuccessUrl("/success")
-                .failureUrl("/fail");
+                .failureUrl("/fail?error=true");
     }
 }
