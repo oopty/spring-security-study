@@ -20,4 +20,21 @@ public class Controller {
     public String fail() {
         return "fail";
     }
+
+    @GetMapping("/expired")
+    public String expired() {
+        return "expired";
+    }
+    @GetMapping("/invalid")
+    public String invalid() {
+        return "invalid";
+    }
+    @GetMapping("/denied")
+    public String denied() {
+        return "/denied";
+    }
+    @GetMapping("/custom/login")
+    public String customLogin() {
+        return "/custom/login";
+    }
 }
