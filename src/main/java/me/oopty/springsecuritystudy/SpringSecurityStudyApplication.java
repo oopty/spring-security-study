@@ -6,6 +6,8 @@ import me.oopty.springsecuritystudy.config.httpBasic.HttpBasicSecurityConfig;
 import me.oopty.springsecuritystudy.config.logout.LogoutSecurityConfig;
 import me.oopty.springsecuritystudy.config.rememberMe.RememberMeSecurityConfig;
 import me.oopty.springsecuritystudy.config.sessionManagement.SessionManagementSecurityConfig;
+import me.oopty.springsecuritystudy.config.twoConfig.SecurityConfig;
+import me.oopty.springsecuritystudy.config.twoConfig.SecurityConfig2;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Import;
@@ -15,7 +17,8 @@ import org.springframework.context.annotation.Import;
 //@Import(LogoutSecurityConfig.class)
 //@Import(RememberMeSecurityConfig.class)
 //@Import(SessionManagementSecurityConfig.class)
-@Import(AuthorizationSecurityConfig.class)
+//@Import(AuthorizationSecurityConfig.class)
+@Import({SecurityConfig.class, SecurityConfig2.class})
 @SpringBootApplication(scanBasePackages = "me.oopty.springsecuritystudy.mvc")
 public class SpringSecurityStudyApplication {
 
